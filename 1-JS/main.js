@@ -62,11 +62,14 @@ console.log(typeof emptyValue, emptyValue); // object null (JavaScript quirk)
 // JSON Object (key-value pairs)
 let person = {
   name: 'Alice',
-  age: 30
+  age: 30,
+  job: 'developer',
+  isMarried: false
 };
 console.log(typeof person, person); // object { name: 'Alice', age: 30 }
 
-const { personName, personAge } = person; // Destructuring
+const { personName, personAge, personjob, personisMarried } = person; // Destructuring
+console.log(typeof personName, personAge, personjob, personisMarried);
 
 
 // Arrays (special object storing multiple values)
